@@ -39,13 +39,13 @@ exports.productDelete = async (req, res) => {
   }
 };
 
-exports.updateProducts = async (req , res ) => {
-     try {
-     const product = await Products.findByIdAndUpdate(req.params.id , req.body, {new:true})
-     res.json(product) 
-     } catch(err) {
-          res.status(404).json(err)
-     }
-
-     
-}
+exports.updateProducts = async (req, res) => {
+  try {
+    const product = await Products.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+    res.json(product);
+  } catch (err) {
+    res.status(404).json(err);
+  }
+};

@@ -8,4 +8,4 @@ router.get("/:id", getProductById)
 router.delete("/:id" , productDelete)
 router.patch("/:id" , updateProducts)
 
-module.exports = router;
+module.exports = router; 
