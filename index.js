@@ -10,7 +10,7 @@ app.use(cors())
 
 app.use("/api/products", require("./route/productroute"));
 app.use("/api/feedbacks" , require("./route/feedbackroute"))
-app.use("/api/users", require("./route/userRoute"));
+app.use("/api/users", require("./controller/userControllers"));
 
 
 const PORT = process.env.PORT || 8000;
